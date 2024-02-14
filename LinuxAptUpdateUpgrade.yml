@@ -1,6 +1,7 @@
 - name: Aktualisieren von Paketen auf Debian/Ubuntu-Systemen
   hosts: all
   become: yes
+  become_user: root
   tasks:
     - name: Aktualisiere die Paketliste
       apt:
