@@ -1,5 +1,5 @@
 - name: Aktualisieren von Paketen auf Debian/Ubuntu-Systemen
-  hosts: *
+  hosts: all
   become: true
   tasks:
     - name: Aktualisiere die Paketliste
