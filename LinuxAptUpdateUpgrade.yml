@@ -1,6 +1,7 @@
 - name: Aktualisieren von Paketen auf Debian/Ubuntu-Systemen
   hosts: all
   become: true
+  become_method: sudo
   tasks:
     - name: Aktualisiere die Paketliste
       apt:
