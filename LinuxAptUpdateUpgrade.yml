@@ -1,12 +1,8 @@
 - name: Aktualisieren von Paketen auf Debian/Ubuntu-Systemen
   hosts: all
-  become: true
-  become_method: sudo
+  become: yes
   tasks:
     - name: Aktualisiere die Paketliste
       apt:
         update_cache: yes
-
-    - name: Führe ein Paket-Upgrade durch
-      apt:
         upgrade: yes
