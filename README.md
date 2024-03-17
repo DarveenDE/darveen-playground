@@ -8,5 +8,8 @@ Since i'm just getting started, there is not much to see. Just a simple playbook
 
 ## Using the "Zabbix-Agent Installer" ##
 To execute the Installer for zabbix-agent2, you can use this:
-`curl -sSL -o InstallZabbix7Agent2.sh https://raw.githubusercontent.com/DarveenDE/darveen-playground/main/InstallZabbix7Agent2.sh && chmod +x InstallZabbix7Agent2.sh && sudo ./InstallZabbix7Agent2.sh`
+
+```shell
+curl -sSL -o InstallZabbix7Agent2.sh https://raw.githubusercontent.com/DarveenDE/darveen-playground/main/InstallZabbix7Agent2.sh && chmod +x InstallZabbix7Agent2.sh && sudo ./InstallZabbix7Agent2.sh
+```
 It's basically downloading the script, making it executable (chmod +x) and then staring it with sudo. Enter your password and wheee!
