@@ -20,7 +20,7 @@ echo -n "Enter the IP/subnet from your Zabbix server (e.g., 192.168.178.0/24 for
 read ZabbixServerIP
 
 # Use sed to find and replace the Server IP address with the user-provided one
-sed -i "s/Server=127.0.0.1/Server=$ZabbixServerIP/" $FILE && echo "Set the allowed IP for connections to $ZabbixServerIP."
+sed -i "s|Server=127.0.0.1|Server=$ZabbixServerIP|" $FILE && echo "Set the allowed IP for connections to $ZabbixServerIP."
 
 echo "5. Restarting Zabbix Agent..."
 if systemctl restart zabbix-agent2 > /dev/null 2>&1; then
